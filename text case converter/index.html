@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text Case Converter</title>
+  <link rel="stylesheet" href="styles.css" />    
+</head>
+<body>
+
+  <div class="container">
+    <h1>📝 Text Case Converter</h1>
+    <textarea id="inputText" placeholder="Paste or type your text here..."></textarea>
+
+    <div class="buttons">
+      <button onclick="convert('uppercase')">UPPERCASE</button>
+      <button onclick="convert('lowercase')">lowercase</button>
+      <button onclick="convert('title')">Title Case</button>
+      <button onclick="convert('sentence')">Sentence case</button>
+      <button onclick="convert('camelCase')">camelCase</button>
+      <button onclick="convert('PascalCase')">PascalCase</button>
+      <button onclick="convert('snake_case')">snake_case</button>
+      <button onclick="convert('kebab-case')">kebab-case</button>
+      <button onclick="convert('mixedCase')">mIxEd CaSe</button>
+    </div>
+
+    <button id="copyBtn" onclick="copyText()">📋 Copy to Clipboard</button>
+
+    <div class="result" id="output"></div>
+    <p id="successMsg" class="success">Copied to clipboard!</p>
+  </div>
+
+<script src="script.js"></script>
+  
+</body>
+</html>
